@@ -11,8 +11,9 @@
 </head>
 <body class="shrine-login">
   <section class="header">
-    <svg class="shrine-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="48px" height="48px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" fill="#000000" focusable="false">
+    <svg class="shrine-logo" enable-background="new 0 0 24 24" fill="#000000" focusable="false" height="48px"
+         version="1.1" viewBox="0 0 24 24" width="48px" x="0px" xml:space="preserve"
+         xmlns="http://www.w3.org/2000/svg" y="0px">
       <g>
         <g>
           <path d="M17,2H7L2,6.62L12,22L22,6.62L17,2z M16.5,3.58l3.16,2.92H16.5V3.58z M7.59,3.5H15v3H4.34L7.59,3.5z
@@ -25,6 +26,24 @@
   </section>
 
   <form action="home.html">
+    <div class="mdc-text-field username">
+      <input class="mdc-text-field__input" id="username-input" name="username" required type="text">
+      <label class="mdc-floating-label" for="username-input">Username</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+    <div class="mdc-text-field password">
+      <input class="mdc-text-field__input" id="password-input" minlength="8" name="password" required type="password">
+      <label class="mdc-floating-label" for="password-input">Password</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+    <div class="button-container">
+      <button class="mdc-button cancel" type="button">
+        Cancel
+      </button>
+      <button class="mdc-button mdc-button--raised next">
+        Next
+      </button>
+    </div>
   </form>
 
   <script src="bundle-login.js" async></script>
